@@ -4,84 +4,69 @@ import { MDBBtn } from "mdb-react-ui-kit";
 import { MDBIcon } from "mdb-react-ui-kit";
 import { Box } from "@mui/system";
 
-export default function Footer() {
+
+import TelegramIcon from "@mui/icons-material/Telegram";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
+export default function App() {
   return (
-    <Box>
-      <MDBFooter className="footer bg-black primary-dark text-white text-center text-md-start">
-        <MDBContainer className="p-4">
-          <MDBRow>
-            <MDBContainer className="p-4 pb-0">
-              <section className="mb-4">
-                <MDBBtn
-                  outline
-                  color="white"
-                  floating
-                  className="m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <MDBIcon fab icon="facebook-f" />
-                </MDBBtn>
+    <MDBFooter className="footer bg-black primary-dark text-white text-center text-md-start">
+      <MDBContainer className="p-4">
+        <MDBRow>
+          <MDBContainer className="p-4 pb-0">
+            <section className="mb-4">
+              <MDBBtn
+                outline
+                color="white"
+                floating
+                className="m-1"
+                href="#!"
+                role="button"
+              >
+                <MDBIcon fab icon="github" />
+                <GitHubIcon className="github" />
+              </MDBBtn>
 
-                <MDBBtn
-                  outline
-                  color="white"
-                  floating
-                  className="m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <MDBIcon fab icon="twitter" />
-                </MDBBtn>
+              <MDBBtn
+                outline
+                color="white"
+                floating
+                className="m-1"
+                href="#!"
+                role="button"
+              >
+                <MDBIcon fab icon="instagram" />
+                <InstagramIcon className="instagram" />
+              </MDBBtn>
 
-                <MDBBtn
-                  outline
-                  color="white"
-                  floating
-                  className="m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <MDBIcon fab icon="google" />
-                </MDBBtn>
-                <MDBBtn
-                  outline
-                  color="white"
-                  floating
-                  className="m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <MDBIcon fab icon="instagram" />
-                </MDBBtn>
+              <MDBBtn
+                outline
+                color="white"
+                floating
+                className="m-1"
+                href="#!"
+                role="button"
+              >
+                <TelegramIcon className="telegram" />
+              </MDBBtn>
 
-                <MDBBtn
-                  outline
-                  color="white"
-                  floating
-                  className="m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <MDBIcon fab icon="linkedin-in" />
-                </MDBBtn>
+              <MDBBtn
+                outline
+                color="white"
+                floating
+                className="m-1"
+                href="#!"
+                role="button"
+              >
+                <MDBIcon fab icon="youtube" />
+                <YouTubeIcon className="youtube" />
+              </MDBBtn>
+            </section>
+          </MDBContainer>
 
-                <MDBBtn
-                  outline
-                  color="white"
-                  floating
-                  className="m-1"
-                  href="#!"
-                  role="button"
-                >
-                  <MDBIcon
-                    fab
-                    icon="https://github.githubassets.com/images/modules/site/social-cards/github-social.png"
-                  />
-                </MDBBtn>
-              </section>
-            </MDBContainer>
-
+     
             <MDBCol lg="3" md="6" className="mb-4 mb-md-0">
               <h5 className="text-uppercase">Владельцам </h5>
 

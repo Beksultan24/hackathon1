@@ -4,11 +4,12 @@ import CartContextProvider from "./contexts/CartContextProvider";
 import ProductContextProvider from "./contexts/ProductContextProvider";
 import MainRoutes from "./MainRoutes";
 
+
 function App() {
   return (
     <>
       <ProductContextProvider>
-        <CartContextProvider>
+  <CartContextProvider>
           <Navbar />
           <MainRoutes />
           <Footer />
