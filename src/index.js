@@ -6,6 +6,8 @@ import { BrowserRouter } from "react-router-dom";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "./styles/Navbar.css";
 import "./styles/MayBach.css";
+import "./styles/Footer.css";
+import "./styles/HomePage.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
