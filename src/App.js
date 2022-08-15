@@ -4,14 +4,13 @@ import ProductContextProvider from "./contexts/ProductContextProvider";
 import MainRoutes from "./MainRoutes";
 import AdminPage from "./pages/AdminPage";
 
-
 function App() {
   return (
     <>
       <ProductContextProvider>
         <Navbar />
         <MainRoutes />
-        <Footer />\
+        <Footer />
       </ProductContextProvider>
     </>
   );

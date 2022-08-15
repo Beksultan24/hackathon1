@@ -3,9 +3,14 @@ import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
 import { MDBBtn } from "mdb-react-ui-kit";
 import { MDBIcon } from "mdb-react-ui-kit";
 
+import TelegramIcon from "@mui/icons-material/Telegram";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
 export default function App() {
   return (
-    <MDBFooter className="footer  bg-black primary-dark text-white text-center text-md-start">
+    <MDBFooter className="footer bg-black primary-dark text-white text-center text-md-start">
       <MDBContainer className="p-4">
         <MDBRow>
           <MDBContainer className="p-4 pb-0">
@@ -18,30 +23,10 @@ export default function App() {
                 href="#!"
                 role="button"
               >
-                <MDBIcon fab icon="facebook-f" />
+                <MDBIcon fab icon="github" />
+                <GitHubIcon className="github" />
               </MDBBtn>
 
-              <MDBBtn
-                outline
-                color="white"
-                floating
-                className="m-1"
-                href="#!"
-                role="button"
-              >
-                <MDBIcon fab icon="twitter" />
-              </MDBBtn>
-
-              <MDBBtn
-                outline
-                color="white"
-                floating
-                className="m-1"
-                href="#!"
-                role="button"
-              >
-                <MDBIcon fab icon="google" />
-              </MDBBtn>
               <MDBBtn
                 outline
                 color="white"
@@ -51,6 +36,7 @@ export default function App() {
                 role="button"
               >
                 <MDBIcon fab icon="instagram" />
+                <InstagramIcon className="instagram" />
               </MDBBtn>
 
               <MDBBtn
@@ -61,7 +47,7 @@ export default function App() {
                 href="#!"
                 role="button"
               >
-                <MDBIcon fab icon="linkedin-in" />
+                <TelegramIcon className="telegram" />
               </MDBBtn>
 
               <MDBBtn
@@ -72,7 +58,8 @@ export default function App() {
                 href="#!"
                 role="button"
               >
-                <MDBIcon fab icon="github" />
+                <MDBIcon fab icon="youtube" />
+                <YouTubeIcon className="youtube" />
               </MDBBtn>
             </section>
           </MDBContainer>

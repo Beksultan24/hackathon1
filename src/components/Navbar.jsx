@@ -15,6 +15,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import SideBar from "../pages/SideBar";
 
 const drawerWidth = 245;
 // const navItems = ["Home", "Cars", "Cart", "Register", "Login", "Admin"];
@@ -72,12 +73,13 @@ function Navbar(props) {
               display: { xs: "none", sm: "block" },
             }}
           >
-            <img
+            {/* <img
               className="icon"
               src="https://assets.webiconspng.com/uploads/2017/09/Mercedes-PNG-Image-50019.png"
               alt="mers"
-            />
-            Mercedes
+            /> */}
+
+            <SideBar />
           </Typography>
           {/* <Box sx={{ display: { xs: "none", sm: "block" } }}> */}
           <Link to="/">
