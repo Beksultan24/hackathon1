@@ -1,13 +1,11 @@
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Cart from "./components/Cart";
+import MainRoutes from "./MainRoutes";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Footer />
-      <Cart />
+      <MainRoutes />
     </>
   );
 }
