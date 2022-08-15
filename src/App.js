@@ -1,15 +1,18 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ProductContextProvider from "./contexts/ProductContextProvider";
 import MainRoutes from "./MainRoutes";
-import HomePage from "./pages/HomePage";
+import AdminPage from "./pages/AdminPage";
+
 
 function App() {
   return (
     <>
-      <Navbar />
-      <MainRoutes />
-      <HomePage />
-      <Footer />
+      <ProductContextProvider>
+        <Navbar />
+        <MainRoutes />
+        <Footer />\
+      </ProductContextProvider>
     </>
   );
 }
