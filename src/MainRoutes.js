@@ -10,6 +10,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProductDetails from "./pages/ProductDetails";
 import ProductsPage from "./pages/ProductsPage";
 import RegistrationPage from "./pages/RegistrationPage";
+import AdminPage from "./pages/AdminPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -52,6 +53,11 @@ const MainRoutes = () => {
       link: "/register",
       element: <RegistrationPage />,
       id: 9,
+    },
+    {
+      link: "/admin",
+      element: <AdminPage />,
+      id: 3,
     },
     {
       link: "*",
