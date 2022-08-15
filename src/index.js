@@ -8,6 +8,7 @@ import "./styles/Navbar.css";
 import "./styles/MayBach.css";
 import "./styles/Footer.css";
 import "./styles/HomePage.css";
+import "./styles/ProductCard.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
