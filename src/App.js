@@ -1,11 +1,15 @@
 import Navbar from "./components/Navbar";
+import ProductContextProvider from "./contexts/ProductContextProvider";
 import MainRoutes from "./MainRoutes";
+import AdminPage from "./pages/AdminPage";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <MainRoutes />
+      <ProductContextProvider>
+        <Navbar />
+        <MainRoutes />
+      </ProductContextProvider>
     </>
   );
 }

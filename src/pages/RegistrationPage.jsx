@@ -22,8 +22,8 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" to="https://mui.com/">
-        Your Website
+      <Link color="inherit" to="/">
+        Mercedes
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -53,7 +53,8 @@ export default function SignInSide() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: "url(https://source.unsplash.com/random)",
+            backgroundImage:
+              "url(https://static.my.ge/myauto/catalog/mercedes/e_klasse_amg/22298932/22299091/img/0.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
               t.palette.mode === "light"
@@ -77,7 +78,7 @@ export default function SignInSide() {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign in
+              Sign Up
             </Typography>
             <Box
               component="form"
@@ -115,17 +116,15 @@ export default function SignInSide() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Sign In
+                Sign Up
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link to="#" variant="body2">
-                    Forgot password?
-                  </Link>
+                  <Link to="#" variant="body2"></Link>
                 </Grid>
                 <Grid item>
-                  <Link to="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
+                  <Link to="/login" variant="body2">
+                    {"Already have an account? Sign In!"}
                   </Link>
                 </Grid>
               </Grid>
