@@ -1,0 +1,15 @@
+.btn-delete {
+  color: gray !important;
+}
+
+.btn-delete:hover {
+  color: rgb(255, 0, 0) !important;
+}
+
+.btn-edit {
+  color: gray !important;
+}
+
+.btn-edit:hover {
+  color: rgb(30, 30, 180) !important;
+}

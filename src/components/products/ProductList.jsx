@@ -38,7 +38,7 @@ const ProductList = () => {
     <Box
       sx={{
         display: "flex",
-        mt: 2,
+        mt: 10,
         flexDirection: "column",
       }}
     >

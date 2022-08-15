@@ -1,12 +1,12 @@
 {
   "products": [
     {
-      "name": "xcxc",
-      "description": "xcxc",
-      "price": null,
-      "picture": "cxcx",
-      "type": "cxc",
-      "id": 1
+      "name": "Mercedes",
+      "description": "В AMG-версии этого легендарного внедорожника установлены технологии трансмиссии и подвески, зарекомендовавшие себя на гоночной трассе. Невозможное становится возможным в Mercedes-AMG G 63. Все благодаря необузданной мощи двигателя V8 с двойным турбонаддувом и дизайну AMG, который никого не оставит равнодушным.",
+      "price": 50000,
+      "picture": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqbWFqtyO35PobzIExXrItvsTQKkojUfGoo7GE11KFm9ehP9Q6FjcBXBUuXGEAiVJ0l5ONOB2CzjbApjdVI5uv4xQC3LSQkzNL6km7jaSthymI9WFPpcUfAyYXOcVD0JbXw%25hOB2zdcbApL7XI5u2WMQC3p7rkzNuK6m7jq6fhKVRcQ%25vqxQ9yLR1k6YaxwuWrH1Z31n8wFXwoiZ9J1M4FDZQTg9WeZ6PDdsmSeWZejtsdFJ%25cUf9MqXGEDXSJ0lWUtOB2d5EbApCkpI5um4ZQC3h67kzN%25S6m7jyXShKVYnF%25vqr3TyLRngVYaxGrSrH1Af%25vX10EyLhwLlYa%25wl2rHyZLpn8YFZuoixmG3M4z99NTg7Fwj6PKztVSejVFqtsV69RcUjxUxXGLZx1J0auiwOBHxpZbABqxFI5DMa9QCVGwDkz0VZWm7BNFdhce6CF2iaPfewJPXBqKVfv75YYHU2GLwvGE10UPbPV7VoztXn5Mzy8YG9vG&imgt=P27&bkgnd=9&pov=BE140&uni=c&im=Crop,rect=(-50,-25,1370,770),gravity=Center;Resize,width=500",
+      "type": "AMG",
+      "id": 3
     }
   ]
 }
