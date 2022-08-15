@@ -35,84 +35,85 @@ const AddProduct = () => {
   return (
     <Box
       sx={{
-        width: "40vw",
-        margin: "0 auto",
+        // width: "100%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <Typography variant="h6" sx={{ m: 2 }}>
-        Add new product
-      </Typography>
-      <TextField
-        sx={{ m: 1 }}
-        color="secondary"
-        id="standard-basic"
-        label="Name"
-        variant="outlined"
-        fullWidth
-        name="name"
-        onChange={handleInp}
-      />
-      <TextField
-        sx={{ m: 1 }}
-        color="secondary"
-        id="standard-basic"
-        label="Description"
-        variant="outlined"
-        fullWidth
-        name="description"
-        onChange={handleInp}
-      />
-      <TextField
-        sx={{ m: 1 }}
-        color="secondary"
-        id="standard-basic"
-        label="Price"
-        variant="outlined"
-        fullWidth
-        name="price"
-        onChange={handleInp}
-      />
-      <TextField
-        sx={{ m: 1 }}
-        color="secondary"
-        id="standard-basic"
-        label="Picture"
-        variant="outlined"
-        fullWidth
-        name="picture"
-        onChange={handleInp}
-      />
-      <TextField
-        sx={{ m: 1 }}
-        color="secondary"
-        id="standard-basic"
-        label="Type"
-        variant="outlined"
-        fullWidth
-        name="type"
-        onChange={handleInp}
-      />
-      <Button
-        sx={{
-          m: 1,
-          bgcolor: "#8C2CEF",
-          color: "#fff",
-          "&:hover": { bgcolor: "#8125DC" },
-        }}
-        variant="outlined"
-        fullWidth
-        size="large"
-        onClick={() => {
-          addProduct(product);
-          navigate("/products");
-        }}
-      >
-        ADD PRODUCT
-      </Button>
+      <Box sx={{ width: "50%", marginTop: 12, marginBottom: 10 }}>
+        <Typography variant="h6" sx={{ m: 2 }}>
+          ADD NEW PRODUCT
+        </Typography>
+        <TextField
+          sx={{ m: 1 }}
+          color="secondary"
+          id="standard-basic"
+          label="Name"
+          variant="outlined"
+          fullWidth
+          name="name"
+          onChange={handleInp}
+        />
+        <TextField
+          sx={{ m: 1 }}
+          color="secondary"
+          id="standard-basic"
+          label="Description"
+          variant="outlined"
+          fullWidth
+          name="description"
+          onChange={handleInp}
+        />
+        <TextField
+          sx={{ m: 1 }}
+          color="secondary"
+          id="standard-basic"
+          label="Price"
+          variant="outlined"
+          fullWidth
+          name="price"
+          onChange={handleInp}
+        />
+        <TextField
+          sx={{ m: 1 }}
+          color="secondary"
+          id="standard-basic"
+          label="Picture"
+          variant="outlined"
+          fullWidth
+          name="picture"
+          onChange={handleInp}
+        />
+        <TextField
+          sx={{ m: 1 }}
+          color="secondary"
+          id="standard-basic"
+          label="Type"
+          variant="outlined"
+          fullWidth
+          name="type"
+          onChange={handleInp}
+        />
+        <Button
+          sx={{
+            m: 1,
+            bgcolor: "rgb(28, 29, 29)",
+            color: "#fff",
+            "&:hover": { bgcolor: "rgb(30, 29, 29)" },
+          }}
+          variant="outlined"
+          fullWidth
+          size="large"
+          onClick={() => {
+            addProduct(product);
+            navigate("/products");
+          }}
+        >
+          ADD PRODUCT
+        </Button>
+      </Box>
     </Box>
   );
 };
