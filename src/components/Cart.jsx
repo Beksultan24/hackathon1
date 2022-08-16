@@ -66,30 +66,77 @@ export default function Cart() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell sx={{ backgroundColor: "red" }}>
+            <StyledTableCell
+              sx={{
+                backgroundColor: "white !important",
+                color: "black !important",
+              }}
+              align="center"
+            >
               Picture
             </StyledTableCell>
-            <StyledTableCell sx={{ backgroundColor: "white" }} align="right">
+            <StyledTableCell
+              sx={{
+                backgroundColor: "white !important",
+                color: "black !important",
+              }}
+              align="center"
+            >
               Name
             </StyledTableCell>
-            <StyledTableCell sx={{ backgroundColor: "white" }} align="right">
+            <StyledTableCell
+              sx={{
+                backgroundColor: "white !important",
+                color: "black !important",
+              }}
+              align="center"
+            >
               Type
             </StyledTableCell>
-            <StyledTableCell sx={{ backgroundColor: "white" }} align="right">
+            <StyledTableCell
+              sx={{
+                backgroundColor: "white !important",
+                color: "black !important",
+              }}
+              align="center"
+            >
               Description
             </StyledTableCell>
-            <StyledTableCell sx={{ backgroundColor: "white" }} align="right">
+            <StyledTableCell
+              sx={{
+                backgroundColor: "white !important",
+                color: "black !important",
+              }}
+              align="center"
+            >
               Price
             </StyledTableCell>
-            <StyledTableCell sx={{ backgroundColor: "white" }} align="right">
+            <StyledTableCell
+              sx={{
+                backgroundColor: "white !important",
+                color: "black !important",
+              }}
+              align="center"
+            >
               Count
             </StyledTableCell>
-            <StyledTableCell sx={{ backgroundColor: "white" }} align="right">
+            <StyledTableCell
+              sx={{
+                backgroundColor: "white !important",
+                color: "black !important",
+              }}
+              align="center"
+            >
               Sub Price
             </StyledTableCell>
-            <StyledTableCell sx={{ backgroundColor: "white" }} align="right">
-              {" "}
-              ---{" "}
+            <StyledTableCell
+              sx={{
+                backgroundColor: "white !important",
+                color: "black !important",
+              }}
+              align="center"
+            >
+              Delete
             </StyledTableCell>
           </TableRow>
         </TableHead>
@@ -121,7 +168,12 @@ export default function Cart() {
               <StyledTableCell align="right">
                 <Button
                   onClick={() => deleteProductInCart(row.item.id)}
-                  startIcon={<DeleteIcon sx={{ color: "#666699" }} />}
+                  startIcon={
+                    <DeleteIcon
+                      className="delete-icon"
+                      sx={{ color: "gray" }}
+                    />
+                  }
                 ></Button>
               </StyledTableCell>
             </StyledTableRow>
@@ -131,7 +183,9 @@ export default function Cart() {
       <Box sx={{ m: 5 }}>
         <Typography variant="h6" component="div">
           Total price: {cart?.totalPrice}
-          <Button onClick={cartCleaner}>BUY NOW</Button>
+          <Button className="btn-buy" onClick={cartCleaner}>
+            BUY NOW
+          </Button>
         </Typography>
       </Box>
     </TableContainer>

@@ -1,9 +1,11 @@
 .footer {
   margin-top: 0 !important;
+  background-color: rgb(8, 8, 8) !important;
 }
 
 .github {
   margin-bottom: 2px;
+  color: white !important;
 }
 
 .telegram {

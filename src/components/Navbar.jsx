@@ -70,7 +70,12 @@ function Navbar(props) {
             sx={{
               cursor: "pointer",
               flexGrow: 1,
-              display: { xs: "none", sm: "block" },
+              display: {
+                // xs: "none",
+                // sm: "block",
+                display: "flex",
+                justifyContent: "row",
+              },
             }}
           >
             {/* <img
@@ -78,27 +83,39 @@ function Navbar(props) {
               src="https://assets.webiconspng.com/uploads/2017/09/Mercedes-PNG-Image-50019.png"
               alt="mers"
             /> */}
-
             <SideBar />
           </Typography>
+          <Typography className="mers-nav">Mercedes-Benz</Typography>
           {/* <Box sx={{ display: { xs: "none", sm: "block" } }}> */}
           <Link to="/">
-            <Button sx={{ color: "#fff" }}>Home</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Home
+            </Button>
           </Link>
           <Link to="/products">
-            <Button sx={{ color: "#fff" }}>Cars</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Cars
+            </Button>
           </Link>
           <Link to="/admin">
-            <Button sx={{ color: "#fff" }}>Admin</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Admin
+            </Button>
           </Link>
           <Link to="/cart">
-            <Button sx={{ color: "#fff" }}>Cart</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Cart
+            </Button>
           </Link>
           <Link to="/register">
-            <Button sx={{ color: "#fff" }}>Register</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Register
+            </Button>
           </Link>
           <Link to="/login">
-            <Button sx={{ color: "#fff" }}>Login</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Login
+            </Button>
           </Link>
           {/* </Box> */}
         </Toolbar>

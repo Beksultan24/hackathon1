@@ -23,55 +23,68 @@ const ProductDetails = () => {
   console.log(productDetails);
 
   return (
-    <Paper
-      sx={{
-        mt: 15,
-        display: "flex",
-        justifyContent: "space-around",
+    <div
+      style={{
+        width: "90%",
       }}
-      elevation={6}
     >
-      <Grid container spacing={2}>
-        <Grid className="productDetails_img" item xs={6}>
-          <img
-            src={productDetails.picture}
-            alt=""
-            style={{ maxWidth: "100%", maxHeight: "70vh" }}
-          />
-        </Grid>
-        <Grid sx={{ marginTop: 3 }} className="productDetails_info" item xs={6}>
-          <Typography className="productDetails_name" variant="h4">
-            {productDetails.name}
-          </Typography>
-          <Typography className="productDetails_type" variant="subtitle1">
-            {productDetails.type}
-          </Typography>
-          <Typography className="productDetails_price" variant="caption">
-            ${productDetails.price}
-          </Typography>
-          <Typography
-            sx={{ paddingRight: "20px" }}
-            className="productDetails_descr"
-          >
-            {productDetails.description}
-          </Typography>
-        </Grid>
-      </Grid>
-      {/* ----------- */}
-      <BottomNavigation
-        className="bottom_nav"
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
+      <Paper
+        sx={{
+          height: 470,
+          mt: 15,
+          ml: 15,
+          mb: 5,
         }}
+        elevation={6}
       >
-        <BottomNavigationAction
-          onClick={() => navigate(`/products/`)}
-          icon={<ArrowBackIcon />}
-        />
-      </BottomNavigation>
-    </Paper>
+        <Grid container spacing={2}>
+          <Grid className="productDetails_img" item xs={6}>
+            <img
+              className="img-details"
+              src={productDetails.picture}
+              alt=""
+              style={{ maxWidth: "100%", maxHeight: "70vh" }}
+            />
+          </Grid>
+          <Grid
+            sx={{ marginTop: 9 }}
+            className="productDetails_info"
+            item
+            xs={6}
+          >
+            <Typography className="productDetails_name" variant="h4">
+              {productDetails.name}
+            </Typography>
+            <Typography className="productDetails_type" variant="subtitle1">
+              {productDetails.type}
+            </Typography>
+            <Typography className="productDetails_price" variant="caption">
+              ${productDetails.price}
+            </Typography>
+            <Typography
+              sx={{ paddingRight: "20px" }}
+              className="productDetails_descr"
+            >
+              {productDetails.description}
+            </Typography>
+          </Grid>
+        </Grid>
+        {/* ----------- */}
+        <BottomNavigation
+          className="bottom_nav"
+          showLabels
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        >
+          <BottomNavigationAction
+            onClick={() => navigate(`/products/`)}
+            icon={<ArrowBackIcon />}
+          />
+        </BottomNavigation>
+      </Paper>
+    </div>
   );
 };
 

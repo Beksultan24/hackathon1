@@ -9,6 +9,7 @@ import "./styles/MayBach.css";
 import "./styles/Footer.css";
 import "./styles/HomePage.css";
 import "./styles/ProductCard.css";
+import "./styles/Cart.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
