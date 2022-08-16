@@ -40,8 +40,11 @@ export default function SideBar() {
       }}
     >
       <br />
-
-      <Button className="btn-cars">AMG</Button>
+      <img
+        className="icon-side"
+        src="https://assets.webiconspng.com/uploads/2017/09/Mercedes-PNG-Image-50019.png"
+      />
+      <Button className="btn-cars1">AMG</Button>
       <br />
       <Button className="btn-cars" onClick={() => navigate("/maybach")}>
         Maybach
@@ -53,7 +56,7 @@ export default function SideBar() {
 
   return (
     <div>
-      {["Mercedes"].map((anchor) => (
+      {[""].map((anchor) => (
         <React.Fragment key={anchor}>
           <div>
             <img

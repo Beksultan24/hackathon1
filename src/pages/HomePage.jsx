@@ -1,26 +1,18 @@
-import { MDBBtnGroup } from "mdb-react-ui-kit";
-import { MDBBtn } from "mdb-react-ui-kit";
 import React from "react";
-import SideBar from "./SideBar";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const HomePage = () => {
   return (
     <div className="homePage">
       <div className="image">
         <img
-          src="https://mbbelarus.by/local/templates/mbbelarus/img/maybach-s/image-1.png.pagespeed.ce.TzFAWCSLM1.png"
+          style={{ width: "100%", height: 655 }}
+          src="https://www.mercedes-benz.co.uk/passengercars/mercedes-benz-cars/models/amg-gt/4-door-coupe-x290-fl/e-performance/performance/_jcr_content/par/hotspotsimple/image.MQ6.12.20220714142114.jpeg"
           alt=""
         />
-        <h2>
-          <span>
-            Новый Mercedes-
-            <br />
-            Maybach S-Класс
-          </span>
-          <br />
-          <br />
-          <span className="epoha">Эпоха легенды</span>
-        </h2>
       </div>
     </div>
   );

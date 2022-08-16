@@ -41,7 +41,7 @@ export default function ProductCard({ item }) {
             fontSize: "16px",
           }}
         >
-          {item.type}
+          {item.name}
         </Typography>
         <Typography
           gutterBottom
@@ -101,7 +101,7 @@ export default function ProductCard({ item }) {
             }}
           >
             <ShoppingCartIcon
-              color={checkProductInCart(item.id) ? "secondary" : ""}
+              color={checkProductInCart(item.id) ? "success" : ""}
               sx={{ mr: "5px" }}
             />
           </IconButton>
