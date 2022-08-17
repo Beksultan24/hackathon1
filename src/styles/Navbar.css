@@ -6,3 +6,34 @@
 #navbar {
   background-color: rgba(5, 5, 5, 0.949) !important;
 }
+
+.btn-cars {
+  font-size: 20px !important;
+  color: rgb(34, 32, 32) !important;
+  border-bottom: 1px solid black !important;
+}
+
+.btn-cars1 {
+  margin-top: 45px !important ;
+  font-size: 20px !important;
+  color: rgb(34, 32, 32) !important;
+  border-bottom: 1px solid black !important;
+}
+
+.icon-side {
+  width: 265px !important;
+  margin-left: 25px !important;
+}
+
+.cancel {
+  margin-top: 350px !important;
+  font-size: 28px !important;
+  color: rgb(34, 32, 32) !important;
+}
+.btn-nav:hover {
+  color: white !important;
+}
+
+.btn-nav:focus {
+  color: white !important;
+}

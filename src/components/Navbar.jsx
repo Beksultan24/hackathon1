@@ -15,6 +15,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import SideBar from "../pages/SideBar";
 
 const drawerWidth = 245;
 // const navItems = ["Home", "Cars", "Cart", "Register", "Login", "Admin"];
@@ -69,34 +70,52 @@ function Navbar(props) {
             sx={{
               cursor: "pointer",
               flexGrow: 1,
-              display: { xs: "none", sm: "block" },
+              display: {
+                // xs: "none",
+                // sm: "block",
+                display: "flex",
+                justifyContent: "row",
+              },
             }}
           >
-            <img
+            {/* <img
               className="icon"
               src="https://assets.webiconspng.com/uploads/2017/09/Mercedes-PNG-Image-50019.png"
               alt="mers"
-            />
-            Mercedes
+            /> */}
+            <SideBar />
           </Typography>
+          <Typography className="mers-nav">Mercedes-Benz</Typography>
           {/* <Box sx={{ display: { xs: "none", sm: "block" } }}> */}
           <Link to="/">
-            <Button sx={{ color: "#fff" }}>Home</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Home
+            </Button>
           </Link>
-          <Link to="/">
-            <Button sx={{ color: "#fff" }}>Cars</Button>
+          <Link to="/products">
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Cars
+            </Button>
           </Link>
           <Link to="/admin">
-            <Button sx={{ color: "#fff" }}>Admin</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Admin
+            </Button>
           </Link>
           <Link to="/cart">
-            <Button sx={{ color: "#fff" }}>Cart</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Cart
+            </Button>
           </Link>
           <Link to="/register">
-            <Button sx={{ color: "#fff" }}>Register</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Register
+            </Button>
           </Link>
           <Link to="/login">
-            <Button sx={{ color: "#fff" }}>Login</Button>
+            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
+              Login
+            </Button>
           </Link>
           {/* </Box> */}
         </Toolbar>

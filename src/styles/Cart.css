@@ -1,0 +1,11 @@
+.delete-icon:hover {
+  color: red !important;
+}
+
+.btn-buy {
+  color: rgb(114, 114, 114) !important;
+}
+
+.btn-buy:hover {
+  color: rgb(19, 19, 255) !important;
+}

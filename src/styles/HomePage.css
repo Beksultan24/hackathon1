@@ -1,25 +1,40 @@
 .image {
   position: relative;
-  width: 100%; /* for IE 6 */
-}
-
-h2 {
-  position: absolute;
-  top: 400px;
-  left: 170px;
   width: 100%;
 }
 
+h1 {
+  position: absolute;
+  top: 100px;
+  left: 18%;
+  color: rgba(255, 233, 233, 0.777);
+  font-size: 80px;
+  font-family: "Playfair Display", serif !important;
+}
+
 h2 span {
-  color: white;
-  /* font: bold 45px/70px Helvetica, Sans-Serif; */
+  color: rgb(239, 189, 189);
   font-size: 55px;
   letter-spacing: -1px;
-
   padding: 10px;
 }
 
 .epoha {
   color: rgb(136, 129, 129);
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.home_button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.model_home {
+  font-size: 60px;
+}
+
+.mers-nav {
+  font-family: "Playfair Display", serif !important;
+  margin-right: 566px !important;
+  font-size: 20px !important;
+  color: rgb(233, 233, 233) !important;
 }

@@ -2,13 +2,19 @@ import React from "react";
 import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
 import { MDBBtn } from "mdb-react-ui-kit";
 import { MDBIcon } from "mdb-react-ui-kit";
+import { Box } from "@mui/system";
+
+import TelegramIcon from "@mui/icons-material/Telegram";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 export default function App() {
   return (
-    <MDBFooter className="footer  bg-black primary-dark text-white text-center text-md-start">
+    <MDBFooter className="footer bg-black primary-dark text-white text-center text-md-start">
       <MDBContainer className="p-4">
         <MDBRow>
-          <MDBContainer className="p-4 pb-0">
+          <MDBContainer className="p-2 pb-0">
             <section className="mb-4">
               <MDBBtn
                 outline
@@ -18,30 +24,12 @@ export default function App() {
                 href="#!"
                 role="button"
               >
-                <MDBIcon fab icon="facebook-f" />
+                <a href="https://github.com/Beksultan24/hackathon1/pull/3">
+                  <MDBIcon fab icon="github" />
+                  <GitHubIcon className="github" />
+                </a>
               </MDBBtn>
 
-              <MDBBtn
-                outline
-                color="white"
-                floating
-                className="m-1"
-                href="#!"
-                role="button"
-              >
-                <MDBIcon fab icon="twitter" />
-              </MDBBtn>
-
-              <MDBBtn
-                outline
-                color="white"
-                floating
-                className="m-1"
-                href="#!"
-                role="button"
-              >
-                <MDBIcon fab icon="google" />
-              </MDBBtn>
               <MDBBtn
                 outline
                 color="white"
@@ -51,6 +39,7 @@ export default function App() {
                 role="button"
               >
                 <MDBIcon fab icon="instagram" />
+                <InstagramIcon className="instagram" />
               </MDBBtn>
 
               <MDBBtn
@@ -61,7 +50,7 @@ export default function App() {
                 href="#!"
                 role="button"
               >
-                <MDBIcon fab icon="linkedin-in" />
+                <TelegramIcon className="telegram" />
               </MDBBtn>
 
               <MDBBtn
@@ -72,7 +61,8 @@ export default function App() {
                 href="#!"
                 role="button"
               >
-                <MDBIcon fab icon="github" />
+                <MDBIcon fab icon="youtube" />
+                <YouTubeIcon className="youtube" />
               </MDBBtn>
             </section>
           </MDBContainer>
@@ -176,7 +166,7 @@ export default function App() {
               </li>
               <li>
                 <a href="#!" className="text-white">
-                  Mercedes me
+                  Mercedes
                 </a>
               </li>
             </ul>
@@ -188,9 +178,8 @@ export default function App() {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © 2022,
-        <a className="text-white" href="https://mdbootstrap.com/">
-          АО «Мерседес-Бенц РУС»
+        <a className="text-white" href="/">
+          Copyright © Mercedes 2022.
         </a>
       </div>
     </MDBFooter>

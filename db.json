@@ -1,20 +1,52 @@
 {
   "products": [
     {
-      "name": "xcxc",
-      "description": "xcxc",
-      "price": null,
-      "picture": "cxcx",
-      "type": "cxc",
-      "id": 1
+      "name": "Mercedes",
+      "description": "В AMG-версии этого легендарного внедорожника установлены технологии трансмиссии и подвески, зарекомендовавшие себя на гоночной трассе. Невозможное становится возможным в Mercedes-AMG G 63. Все благодаря необузданной мощи двигателя V8 с двойным турбонаддувом и дизайну AMG, который никого не оставит равнодушным.",
+      "price": 50000,
+      "picture": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqbWFqtyO35PobzIExXrItvsTQKkojUfGoo7GE11KFm9ehP9Q6FjcBXBUuXGEAiVJ0l5ONOB2CzjbApjdVI5uv4xQC3LSQkzNL6km7jaSthymI9WFPpcUfAyYXOcVD0JbXw%25hOB2zdcbApL7XI5u2WMQC3p7rkzNuK6m7jq6fhKVRcQ%25vqxQ9yLR1k6YaxwuWrH1Z31n8wFXwoiZ9J1M4FDZQTg9WeZ6PDdsmSeWZejtsdFJ%25cUf9MqXGEDXSJ0lWUtOB2d5EbApCkpI5um4ZQC3h67kzN%25S6m7jyXShKVYnF%25vqr3TyLRngVYaxGrSrH1Af%25vX10EyLhwLlYa%25wl2rHyZLpn8YFZuoixmG3M4z99NTg7Fwj6PKztVSejVFqtsV69RcUjxUxXGLZx1J0auiwOBHxpZbABqxFI5DMa9QCVGwDkz0VZWm7BNFdhce6CF2iaPfewJPXBqKVfv75YYHU2GLwvGE10UPbPV7VoztXn5Mzy8YG9vG&imgt=P27&bkgnd=9&pov=BE140&uni=c&im=Crop,rect=(-50,-25,1370,770),gravity=Center;Resize,width=500",
+      "type": "AMG",
+      "id": 3
     },
     {
-      "name": "",
-      "description": "",
-      "price": "",
-      "picture": "",
-      "type": "",
-      "id": 2
+      "name": "Mercedes-AMG A 35 4MATIC",
+      "description": "В салоне хетчбэка A-Класса словно погружаешься в объятия комфорта. Плавные переходы между панелью приборов, центральной консолью и обшивкой дверей создают приятный обволакивающий эффект. Это уникально для автомобилей данного класса, равно как и широкий выбор декоративных элементов и эффектная комфортная подсветка салона.",
+      "price": 45000,
+      "picture": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO35PobzIExXrItvsTQKkojUfGoo7GE11KFm90I59Q6FjcBXB8jXGEAnmJ0lFoNOB2NBObApjTlI5uVcxQC3qk7kzNRmdm7jZ7ZhKVFYW%25vq9JTyLRDOfYaxWNhrH1djun8wfhWoiZL5IM4FaKJTg9Ht26PD8csSeWinjtsd4cGcUfCUuXGEzbXJ0l7IfOB2KbqbApJilI5uOmJQC3bE7kzN4Jbm7jgOvhKVPTh%25vqAtTyLR5GRYaxVa8rH1qBun8wRQfoiZxMIM4FsmJTg9Uhk6PDGmhSc6o3juzw%25vq8cXyr%25WNaYny2tSrH1R3On8wx4boiZClYaOZ02rHA1qpn85PouoiMZx3M4TQ6NTg6dCj6PSfWVSet85qtsciNRcU2fvxXrL%25ejFzAv1Lr5Y2HzGE10UPbb5HF8B308wuiHvTvEUEksYnQPmsOCb8V08&imgt=P27&bkgnd=9&pov=BE140&uni=c&im=Crop,rect=(-50,-25,1370,770),gravity=Center;Resize,width=500",
+      "type": "AMG",
+      "id": 4
+    },
+    {
+      "name": "Mercedes-AMG E 53 4MATIC+",
+      "description": "Mercedes-AMG E-Класса всегда считался эталоном мощного представительского седана. Обновленная модель полностью соответствует этому статусу. Автомобиль прекрасно подойдет и для поездок на бизнес-встречи, и для того, чтобы наслаждаться скоростью и спортивным стилем вождения.",
+      "price": 57300,
+      "picture": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqb8FqtyO67PobzIr3eWsrrCsdRRzwQZgk4ZbMw3SGtGyMtsd2sDcUfp8fXGEuiRJ0l3IrOB2NS1bApjI9I5uxoMQC31MjkzNwtnm7jZMZhKV5Kh%25vqCycyLRgcDYaxPaYrH1eHDn8wsQcoiZr7YM4FnylTg95zZ6PDCroSeWznUtsd8hTcUfiUNXGE49dJ0lg6JOB2Pz%25bAp7oMIkbX1Zx8fTg9Ukm6tTuweSc6qQMtsdHJQcUfaFwXGEsbYJ0lUOAOB2GzqbApFCVI5uC4zQC3zspkzN7%25dm7jKOZhKVv%25N%25vqJtqyL0fsjko9wdYfHhdJRfRcYxqN88Zlo21Ix2rbpldCdcqcgVGB4NPVHF82mx2&imgt=P27&bkgnd=9&pov=BE140&uni=c&im=Crop,rect=(-50,-25,1370,770),gravity=Center;Resize,width=500",
+      "type": "AMG",
+      "id": 5
+    },
+    {
+      "name": "Mercedes-AMG GLC 43 4MATIC",
+      "description": "Отдав предпочтение любой из моделей Mercedes-AMG GLC, вы никогда не окажетесь перед выбором – привычные каждодневные дела или выработка эндорфинов. Mercedes-AMG GLC 43 4MATIC и GLC 63 S 4MATIC+ подарят вам радость спортивного вождения при повседневной эксплуатации. Решетка радиатора в стиле Panamericana визуально подчеркивает техническое родство со спорткарами AMG GT.",
+      "price": 79000,
+      "picture": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNSFqtyO35PobzIExXrItvsTQKkojUfGoo7GE11KFm9mWa9Q6FjcBXBUuXGEAiVJ0l5oVOB2CbjbApz7VI5uWmqQC3dSRkzNflxm7jEO1hKV1KN%25vqwBqyLRZAfYaxFohrH19MOn8wDQfoiZWkgM4FdmwTg9fxE6PDErpSeWlnWtsd2oVcUfpAfXGEjyYJ0lVIxOB2qM%25bApRTwI5uxfJQC31EFkzNwldm7jAeohKV5YF%25vqCrayLRz3RYax7NprH1Kmln8wvoboiZUbEM4FG4fTg90tk6PDB%25bSeWAtutsd6sQcUfSLWXGEtbSJ0lcDAOB2XSqbApHibI5u84ZQC3isTkzN4Jbm7jgOvhKVBSF%25vqAv9yLR5GRYaxCbSrH1zIOn8w7hcoiZK%25oM4FvyuTg9LYe6PDarqSeWHtMtsd8c%25cUfiANXGE45XJ0ldYVOB2fB5bApEi9I5ulQMQC3vSrkzNLt6m7jaSthymI9WFPpcUfAyYXOcVD0JbXw%25tOB2E9nbAplCoI5uNoDQC34CrkzNeZbAMsPFI5OIP9QCbdCDkzIfjWm7QR7dhKkfyf%25vmngEyLhxRlYaBxV2rHASWpn8owRuoiMZF3M4TM0NTg6kpj6PSmzVSethcqtscrKRcUXwHxXGJN71J0OwUwOB32BZbM8rGRWvzHF8Q5H%25A8ApF5BUkk74WgCV5g9jP4HtHpBp%250oThUy0QKkgx5g&imgt=P27&bkgnd=9&pov=BE140&uni=c&im=Crop,rect=(-50,-25,1370,770),gravity=Center;Resize,width=500",
+      "type": "AMG",
+      "id": 6
+    },
+    {
+      "name": "Mercedes-Maybach S-Класса",
+      "description": "Новый Mercedes-Maybach S-Класса – воплощение ультимативной роскоши. Превосходные материалы, высочайшее качество обработки деталей, непревзойденный комфорт, инновационные технологии и талантливый личный помощник – интеллектуальная информационно-развлекательная система MBUX – откроют для вас новую эру владения роскошным автомобилем класса люкс.",
+      "price": 120000,
+      "picture": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqbSFqtyO67PobzIr3eWsrrCsdRRzwQZgk4ZbMw3SGtGyMtsd1JpcUfwFuXGEZT3J0l30NOB2N8ObApjipI5uVeYQC3qsQkzNRU9m7jxGvhKV1Yh%25vqwrcyLRZ3HYaxFkErH19min8wDoyoiZWeYM4FdsMTg9fUV6PDpkoSeWumUtsd3hDcUfNUWXGEjamJ0lVHtOB2q8ObApRTyI5uxfDQC30MrkzNBTbm7jA6vhKV5Kh%25vqCUTyLRzAmYax75JrH1KMrn8wvT2oiZL6NM4FaSQTg9HhO6PD8%25oSeWiyStsd4oVcUfC%25kXGEzGXJ0l74lOB2KQqbApvkbI5uLmzQC3aSrkzNHlnm7j82IhKVi%25M%25vq4ykyLRgY2YaxP48rH1yBRn8wYoEoiZBidM4FACPTg95zV6PDC7uSeWzajtsd8hTcUfiUkXGE4bjJ0lgolOB2PW1bApedlI5uscuQC3UXpkzNGmnm7j0hIhKVB%25h%25vqAylyLR5YXYaxC4SrH1zgRn8w7PboiZxbYM4F1IMTg9wQe6PDZkqSeWFXMtsdBhVcUfAyYXOc6VRjv9rH1gObnMrEqioTn3JXM4F0mlTg9BhO6PDLkoSeWvK3tsdPhxcUfe%25yXGEsajJ0lUHhOB2Gg2bAp0kbI5uBmDQC3ASQkzN5tNm7jC2jhKVzpt%25vqEtTyLRl36Yax2N8rH18Jun8wi8woiZ4iIM4FgCuTg9Pv36PDe1bSevjzFoJpENtjUkNA1jWmtdDZGGlqJRfrdRcYxqN8NmDmA9KLBZ59U2GRMdR&imgt=P27&bkgnd=9&pov=BE140&uni=c&im=Crop,rect=(-50,-25,1370,770),gravity=Center;Resize,width=500",
+      "type": "Maybach",
+      "id": 7
+    },
+    {
+      "name": "Mercedes-EQE",
+      "description": "От легендарного дизайна с натянутой дугой линией окна и до захватывающего дух гиперэкрана MBUX: новый EQE объединяет чувственную эстетику с передовым инженерным искусством на самом высоком уровне. Вступайте в новую, роскошную эру электромобильности",
+      "price": 78000,
+      "picture": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4897/c/71/8ec7521e34cad5709642f3b9425328cd79f8a.png?im=Crop,rect=(70,35,460,260);Resize,width=500",
+      "type": "EQ",
+      "id": 8
     }
   ]
 }

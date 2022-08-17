@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AboutUsPage from "./pages/AboutUsPage";
 import CartPage from "./pages/CartPage";
-import EditProduct from "./pages/EditProduct";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import MayBach from "./pages/MayBach";
@@ -11,6 +10,8 @@ import ProductDetails from "./pages/ProductDetails";
 import ProductsPage from "./pages/ProductsPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import AdminPage from "./pages/AdminPage";
+import EditProductPage from "./pages/EditProductPage";
+import Amg from "./pages/Amg";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -31,7 +32,7 @@ const MainRoutes = () => {
     },
     {
       link: "/edit/:id",
-      element: <EditProduct />,
+      element: <EditProductPage />,
       id: 5,
     },
     {
@@ -68,6 +69,11 @@ const MainRoutes = () => {
       link: "/maybach",
       element: <MayBach />,
       id: 11,
+    },
+    {
+      link: "/amg",
+      element: <Amg />,
+      id: 12,
     },
   ];
   return (

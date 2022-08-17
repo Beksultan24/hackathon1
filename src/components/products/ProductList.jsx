@@ -11,7 +11,7 @@ const ProductList = () => {
   console.log(searchParams);
 
   const [page, setPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
   const count = Math.ceil(products.length / itemsPerPage);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const ProductList = () => {
     <Box
       sx={{
         display: "flex",
-        mt: 2,
+        mt: 10,
         flexDirection: "column",
       }}
     >
