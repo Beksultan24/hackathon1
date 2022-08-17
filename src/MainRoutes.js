@@ -13,6 +13,7 @@ import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
 import Amg from "./pages/Amg";
 
+
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     {

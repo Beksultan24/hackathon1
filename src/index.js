@@ -12,6 +12,7 @@ import "./styles/ProductCard.css";
 import "./styles/Cart.css";
 import "./styles/Amg.css";
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
