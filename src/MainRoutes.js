@@ -12,6 +12,7 @@ import RegistrationPage from "./pages/RegistrationPage";
 import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
 import PayPage from "./pages/PayPage";
+import Amg from "./pages/Amg";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -73,6 +74,11 @@ const MainRoutes = () => {
     {
       link: "/paypage",
       element: <PayPage />,
+      id: 12,
+    },
+    {
+      link: "/amg",
+      element: <Amg />,
       id: 13,
     },
   ];

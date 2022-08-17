@@ -1,0 +1,109 @@
+html {
+  overflow-x: hidden;
+}
+.carousel-control-next-icon::after {
+  content: ">" !important;
+}
+.carousel-control-prev-icon::after {
+  content: "<" !important;
+}
+
+.body {
+  background-color: rgb(8, 8, 8) !important;
+}
+
+.image1 {
+  margin-top: 60px;
+}
+
+.abs {
+  color: rgb(0, 0, 0);
+}
+
+/* .image11 {
+  margin-top: 100px;
+  margin-left: 70px;
+  width: 320px;
+  height: 200px;
+}
+
+.image33 {
+  margin-top: 320px;
+  margin-left: 60px;
+} */
+
+.stick {
+  border-bottom: 1px solid white !important;
+  margin: 0;
+  border-color: white !important;
+  padding: 0;
+  width: 40px;
+  background-color: #fff !important;
+}
+
+.about {
+  margin-left: 50px;
+  margin-top: 100px;
+  -webkit-box-flex: 0;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.title {
+  color: #fff;
+}
+
+.about2 {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.about3 {
+  color: #fff;
+}
+
+.image1 {
+  width: 50% !important;
+  margin-left: 50px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.title2 {
+  color: #fff;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.about4 {
+  color: #fff;
+  margin-left: 30px;
+}
+
+.image2 {
+  width: 50% !important;
+  margin-left: 50px;
+}
+
+.power {
+  color: #fff;
+  margin-left: 30px;
+}
+
+.capacity {
+  color: #fff;
+  margin-left: 30px;
+}
+
+.title-capacity {
+  color: #fff;
+  margin-left: 30px;
+}
+
+.liki {
+  color: #fff;
+  margin-left: 30px;
+}

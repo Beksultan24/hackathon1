@@ -44,7 +44,9 @@ export default function SideBar() {
         className="icon-side"
         src="https://assets.webiconspng.com/uploads/2017/09/Mercedes-PNG-Image-50019.png"
       />
-      <Button className="btn-cars1">AMG</Button>
+      <Button className="btn-cars1" onClick={() => navigate("/amg")}>
+        AMG
+      </Button>
       <br />
       <Button className="btn-cars" onClick={() => navigate("/maybach")}>
         Maybach
