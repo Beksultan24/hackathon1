@@ -1,17 +1,21 @@
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import { Link } from "react-router-dom";
-import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+// import Avatar from "@mui/material/Avatar";
+// import Button from "@mui/material/Button";
+// import CssBaseline from "@mui/material/CssBaseline";
+// import TextField from "@mui/material/TextField";
+// import FormControlLabel from "@mui/material/FormControlLabel";
+// import Checkbox from "@mui/material/Checkbox";
+import Link from "@mui/material/Link";
+// import Paper from "@mui/material/Paper";
+// import Box from "@mui/material/Box";
+// import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContextProvider";
 
 function Copyright(props) {
   return (
@@ -22,8 +26,8 @@ function Copyright(props) {
       {...props}
     >
       {"Copyright © "}
-      <Link color="inherit" to="/">
-        Mercedes
+      <Link color="inherit" href="https://mui.com/">
+        Your Website
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -33,106 +37,90 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignInSide() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-  };
+export default function RegistrationPage() {
+  const { register, error } = useAuth();
+  const navigate = useNavigate();
+
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+
+  const [changeColorProfile, setChangeColorProfile] = React.useState("#adadad");
+  const [changeColorLock, setChangeColorLock] = React.useState("#adadad");
+
+  function handleRegister(email, password) {
+    register(email, password);
+  }
 
   return (
-    <ThemeProvider theme={theme}>
-      <Grid container component="main" sx={{ height: "100vh" }}>
-        <CssBaseline />
-        <Grid
-          item
-          xs={false}
-          sm={4}
-          md={7}
-          sx={{
-            backgroundImage:
-              "url(https://static.my.ge/myauto/catalog/mercedes/e_klasse_amg/22298932/22299091/img/0.jpg)",
-            backgroundRepeat: "no-repeat",
-            backgroundColor: (t) =>
-              t.palette.mode === "light"
-                ? t.palette.grey[50]
-                : t.palette.grey[900],
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-          <Box
-            sx={{
-              my: 8,
-              mx: 4,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-              <LockOutlinedIcon />
-            </Avatar>
-            <Typography component="h1" variant="h5">
-              Sign Up
-            </Typography>
-            <Box
-              component="form"
-              noValidate
-              onSubmit={handleSubmit}
-              sx={{ mt: 1 }}
-            >
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-                autoFocus
+    <div className="auth-main">
+      <div className="auth-block">
+        <h3 className="auth-header">Sign Up</h3>
+        <div className="auth__input-block">
+          <p>Username</p>
+          <div className="auth-input__form">
+            <label htmlFor="email">
+              <PersonOutlineIcon
+                id="usernameInp"
+                className="auth-input__icon"
+                sx={{ color: changeColorProfile, transition: "all 100ms" }}
               />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
+            </label>
+            <input
+              placeholder="Type username"
+              className="auth-input"
+              type="text"
+              id="email"
+              name="email"
+              autoComplete="email"
+              autoFocus
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              onFocus={() => setChangeColorProfile("#8C2CEF")}
+              onBlur={() => setChangeColorProfile("#adadad")}
+            />
+          </div>
+        </div>
+        <div className="auth__input-block">
+          <p>Password</p>
+          <div className="auth-input__form">
+            <label htmlFor="password">
+              <LockOutlinedIcon
+                id="userpasswordInp"
+                className="auth-input__icon"
+                sx={{ color: changeColorLock, transition: "all 100ms" }}
               />
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
-              />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-              >
-                Sign Up
-              </Button>
-              <Grid container>
-                <Grid item xs>
-                  <Link to="#" variant="body2"></Link>
-                </Grid>
-                <Grid item>
-                  <Link to="/login" variant="body2">
-                    {"Already have an account? Sign In!"}
-                  </Link>
-                </Grid>
-              </Grid>
-              <Copyright sx={{ mt: 5 }} />
-            </Box>
-          </Box>
-        </Grid>
-      </Grid>
-    </ThemeProvider>
+            </label>
+            <input
+              placeholder="Type password"
+              name="password"
+              label="Password"
+              type="password"
+              id="password"
+              autoComplete="current-password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              onFocus={() => setChangeColorLock("#8C2CEF")}
+              onBlur={() => setChangeColorLock("#adadad")}
+            />
+          </div>
+        </div>
+        {error ? (
+          <Typography sx={{ color: "red", m: 1 }}>{error}</Typography>
+        ) : null}
+        <button
+          className="auth-btn"
+          // onClick={() => handleLogin(email, password)}
+          onClick={() => handleRegister(email, password)}
+        >
+          Sign Up
+        </button>
+        <div className="auth-another">
+          <p className="auth-another__hint">Or Sign In</p>
+          <button onClick={() => navigate("/login")} className="auth-link">
+            SIGN IN
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }

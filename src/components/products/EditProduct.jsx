@@ -135,7 +135,7 @@ const EditProduct = () => {
       <Button
         sx={{
           m: 1,
-          bgcolor: "#8C2CEF",
+          bgcolor: "black",
           color: "#fff",
           "&:hover": { bgcolor: "#8125DC" },
         }}

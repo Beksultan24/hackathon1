@@ -22,6 +22,10 @@ export default function ProductCard({ item }) {
   const { deleteProduct } = useProducts();
   const { addProductToCart, checkProductInCart } = useCart();
 
+  const user = localStorage.getItem("username");
+
+  // console.log(user);
+
   const navigate = useNavigate();
   const color = red[500];
 
@@ -70,7 +74,7 @@ export default function ProductCard({ item }) {
       </CardContent>
 
       <CardActions className={"button"}>
-        <Button
+        {/* <Button
           className="btn-delete"
           startIcon={<DeleteIcon />}
           onClick={() => deleteProduct(item.id)}
@@ -84,7 +88,35 @@ export default function ProductCard({ item }) {
           onClick={() => navigate(`/edit/${item.id}`)}
         >
           EDIT
-        </Button>
+        </Button> */}
+
+        {user === "admin@admin.com" ? (
+          <>
+            <Button
+              className="btn-delete"
+              startIcon={<DeleteIcon />}
+              onClick={() => deleteProduct(item.id)}
+            >
+              DELETE
+            </Button>
+
+            <Button
+              className="btn-edit"
+              startIcon={<EditIcon />}
+              onClick={() => navigate(`/edit/${item.id}`)}
+            >
+              EDIT
+            </Button>
+          </>
+        ) : // <Button
+        //   className="btn-edit"
+        //   startIcon={<EditIcon />}
+        //   onClick={() => navigate(`/edit/${item.id}`)}
+        // >
+        //   Buy
+        // </Button>
+
+        null}
 
         <Button
           startIcon={<MoreHorizIcon />}

@@ -3,14 +3,14 @@
   width: 100%;
 }
 
-h1 {
+/* h1 {
   position: absolute;
   top: 100px;
   left: 18%;
   color: rgba(255, 233, 233, 0.777);
   font-size: 80px;
   font-family: "Playfair Display", serif !important;
-}
+} */
 
 h2 span {
   color: rgb(239, 189, 189);

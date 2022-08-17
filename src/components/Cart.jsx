@@ -11,6 +11,7 @@ import { useCart } from "../contexts/CartContextProvider";
 import { Box } from "@mui/system";
 import { Button, TextField, Typography } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { useNavigate } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -46,6 +47,7 @@ const rows = [
 
 export default function Cart() {
   const { getCart, changeProductCount, deleteProductInCart, cart } = useCart();
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     getCart();
@@ -54,6 +56,7 @@ export default function Cart() {
 
   function cartCleaner() {
     localStorage.removeItem("cart");
+    navigate("/paypage");
     getCart();
   }
 
@@ -183,7 +186,7 @@ export default function Cart() {
       <Box sx={{ m: 5 }}>
         <Typography variant="h6" component="div">
           Total price: {cart?.totalPrice}
-          <Button className="btn-buy" onClick={cartCleaner}>
+          <Button className="btn-buy" onClick={() => cartCleaner()}>
             BUY NOW
           </Button>
         </Typography>

@@ -9,14 +9,6 @@
       "id": 3
     },
     {
-      "name": "Mercedes-AMG A 35 4MATIC",
-      "description": "В салоне хетчбэка A-Класса словно погружаешься в объятия комфорта. Плавные переходы между панелью приборов, центральной консолью и обшивкой дверей создают приятный обволакивающий эффект. Это уникально для автомобилей данного класса, равно как и широкий выбор декоративных элементов и эффектная комфортная подсветка салона.",
-      "price": 45000,
-      "picture": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO35PobzIExXrItvsTQKkojUfGoo7GE11KFm90I59Q6FjcBXB8jXGEAnmJ0lFoNOB2NBObApjTlI5uVcxQC3qk7kzNRmdm7jZ7ZhKVFYW%25vq9JTyLRDOfYaxWNhrH1djun8wfhWoiZL5IM4FaKJTg9Ht26PD8csSeWinjtsd4cGcUfCUuXGEzbXJ0l7IfOB2KbqbApJilI5uOmJQC3bE7kzN4Jbm7jgOvhKVPTh%25vqAtTyLR5GRYaxVa8rH1qBun8wRQfoiZxMIM4FsmJTg9Uhk6PDGmhSc6o3juzw%25vq8cXyr%25WNaYny2tSrH1R3On8wx4boiZClYaOZ02rHA1qpn85PouoiMZx3M4TQ6NTg6dCj6PSfWVSet85qtsciNRcU2fvxXrL%25ejFzAv1Lr5Y2HzGE10UPbb5HF8B308wuiHvTvEUEksYnQPmsOCb8V08&imgt=P27&bkgnd=9&pov=BE140&uni=c&im=Crop,rect=(-50,-25,1370,770),gravity=Center;Resize,width=500",
-      "type": "AMG",
-      "id": 4
-    },
-    {
       "name": "Mercedes-AMG E 53 4MATIC+",
       "description": "Mercedes-AMG E-Класса всегда считался эталоном мощного представительского седана. Обновленная модель полностью соответствует этому статусу. Автомобиль прекрасно подойдет и для поездок на бизнес-встречи, и для того, чтобы наслаждаться скоростью и спортивным стилем вождения.",
       "price": 57300,

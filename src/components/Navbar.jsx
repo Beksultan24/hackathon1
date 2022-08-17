@@ -1,151 +1,272 @@
+import SideBar from "../pages/SideBar";
 import * as React from "react";
-import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-import SideBar from "../pages/SideBar";
+import { useAuth } from "../contexts/AuthContextProvider";
 
-const drawerWidth = 245;
-// const navItems = ["Home", "Cars", "Cart", "Register", "Login", "Admin"];
+const Navbar = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-function Navbar(props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const { logout } = useAuth();
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
+  const user = localStorage.getItem("username");
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
   };
 
-  // const drawer = (
-  //   <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-  //     <Typography variant="h6" sx={{ my: 2 }}>
-  //       Mercedes
-  //     </Typography>
-  //     <Divider />
-  //     <List>
-  //       {navItems.map((item) => (
-  //         <ListItem key={item} disablePadding>
-  //           <ListItemButton sx={{ textAlign: "center" }}>
-  //             <ListItemText primary={item} />
-  //           </ListItemButton>
-  //         </ListItem>
-  //       ))}
-  //     </List>
-  //   </Box>
-  // );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  const handleOut = () => {
+    logout();
+    navigate("/");
+  };
 
   const navigate = useNavigate();
 
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
   return (
-    <Box>
-      <AppBar id="navbar" position="fixed" component="nav">
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              cursor: "pointer",
-              flexGrow: 1,
-              display: {
-                // xs: "none",
-                // sm: "block",
-                display: "flex",
-                justifyContent: "row",
-              },
-            }}
-          >
-            {/* <img
-              className="icon"
-              src="https://assets.webiconspng.com/uploads/2017/09/Mercedes-PNG-Image-50019.png"
-              alt="mers"
-            /> */}
-            <SideBar />
-          </Typography>
-          <Typography className="mers-nav">Mercedes-Benz</Typography>
-          {/* <Box sx={{ display: { xs: "none", sm: "block" } }}> */}
-          <Link to="/">
-            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
-              Home
-            </Button>
-          </Link>
-          <Link to="/products">
-            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
-              Cars
-            </Button>
-          </Link>
-          <Link to="/admin">
-            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
-              Admin
-            </Button>
-          </Link>
-          <Link to="/cart">
-            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
-              Cart
-            </Button>
-          </Link>
-          <Link to="/register">
-            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
-              Register
-            </Button>
-          </Link>
-          <Link to="/login">
-            <Button className="btn-nav" sx={{ color: "rgb(82, 81, 81)" }}>
-              Login
-            </Button>
-          </Link>
-          {/* </Box> */}
-        </Toolbar>
-      </AppBar>
-      <Box component="nav">
-        {/* <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
+    <AppBar id="navbar" position="fixed">
+      <Container maxWidth="xl">
+        <Toolbar
+          disableGutters
           sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
+            display: "flex",
+            alignItems: "center !important",
+            justifyContent: "center",
           }}
         >
-         
-        </Drawer> */}
-      </Box>
-    </Box>
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              mr: 1,
+              justifyContent: "center",
+            }}
+          >
+            <SideBar />
+          </Box>
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            <Typography className="mers-nav">Mercedes-Benz</Typography>
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+              {/* <SideBar /> */}
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "right",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              <MenuItem onClick={(handleCloseNavMenu, () => navigate("/"))}>
+                <Typography textAlign="center">Home</Typography>
+              </MenuItem>
+              <MenuItem
+                onClick={(handleCloseNavMenu, () => navigate("/products"))}
+              >
+                <Typography textAlign="center">Cars</Typography>
+              </MenuItem>
+              <MenuItem
+                onClick={(handleCloseNavMenu, () => navigate("/admin"))}
+              >
+                <Typography textAlign="center">Admin</Typography>
+              </MenuItem>
+              <MenuItem onClick={(handleCloseNavMenu, () => navigate("/cart"))}>
+                <Typography textAlign="center">Cart</Typography>
+              </MenuItem>
+
+              {user ? (
+                <MenuItem onClick={(handleCloseNavMenu, () => handleOut())}>
+                  <Typography textAlign="center">Log out</Typography>
+                </MenuItem>
+              ) : (
+                <>
+                  <MenuItem
+                    onClick={(handleCloseNavMenu, () => navigate("/register"))}
+                  >
+                    <Typography textAlign="center">Register</Typography>
+                  </MenuItem>
+                  <MenuItem
+                    onClick={(handleCloseNavMenu, () => navigate("/login"))}
+                  >
+                    <Typography textAlign="center">Login</Typography>
+                  </MenuItem>
+                </>
+              )}
+            </Menu>
+          </Box>
+          {/* <SideBar /> */}
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: "flex", md: "none" },
+              flexGrow: 1,
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            {/* <SideBar /> */}
+            <Typography className="mers-nav">
+              <SideBar />
+              Mercedes-Benz
+            </Typography>
+          </Typography>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              alignItems: "center",
+            }}
+          >
+            <Typography
+              className="btn-nav"
+              onClick={(handleCloseNavMenu, () => navigate("/"))}
+              textAlign="center"
+            >
+              Home
+            </Typography>
+
+            <MenuItem
+              className="btn-nav"
+              onClick={(handleCloseNavMenu, () => navigate("/products"))}
+            >
+              <Typography className="cars" textAlign="center">
+                Cars
+              </Typography>
+            </MenuItem>
+
+            {user === "admin@admin.com" ? (
+              <MenuItem
+                className="btn-nav"
+                onClick={(handleCloseNavMenu, () => navigate("/admin"))}
+              >
+                <Typography textAlign="center">Admin</Typography>
+              </MenuItem>
+            ) : null}
+
+            {/* <MenuItem
+              className="btn-nav"
+              onClick={(handleCloseNavMenu, () => navigate("/admin"))}
+            >
+              <Typography className="admin" textAlign="center">
+                Admin
+              </Typography>
+            </MenuItem> */}
+
+            <MenuItem
+              className="btn-nav"
+              onClick={(handleCloseNavMenu, () => navigate("/cart"))}
+            >
+              <Typography textAlign="center">Cart</Typography>
+            </MenuItem>
+
+            {user ? (
+              <MenuItem onClick={(handleCloseNavMenu, () => handleOut())}>
+                <Typography className="btn-nav" textAlign="center">
+                  Log Out
+                </Typography>
+              </MenuItem>
+            ) : (
+              <>
+                <MenuItem
+                  onClick={(handleCloseNavMenu, () => navigate("/register"))}
+                >
+                  <Typography className="btn-nav" textAlign="center">
+                    Register
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  onClick={(handleCloseNavMenu, () => navigate("/login"))}
+                >
+                  <Typography className="btn-nav" textAlign="center">
+                    Login
+                  </Typography>
+                </MenuItem>
+              </>
+            )}
+
+            {/* <MenuItem
+              className="btn-nav"
+              onClick={(handleCloseNavMenu, () => navigate("/register"))}
+            >
+              <Typography className="register" textAlign="center">
+                Register
+              </Typography>
+            </MenuItem>
+
+            <MenuItem
+              className="btn-nav"
+              onClick={(handleCloseNavMenu, () => navigate("/login"))}
+            >
+              <Typography className="login" textAlign="center">
+                Login
+              </Typography>
+            </MenuItem> */}
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
-}
-
-Navbar.propTypes = {
-  window: PropTypes.func,
 };
-
 export default Navbar;

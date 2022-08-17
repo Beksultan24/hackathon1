@@ -30,10 +30,18 @@
   font-size: 28px !important;
   color: rgb(34, 32, 32) !important;
 }
-.btn-nav:hover {
-  color: white !important;
-}
 
 .btn-nav:focus {
   color: white !important;
+  transform: scale(1.2) !important;
 }
+
+.btn-nav {
+  color: gray !important;
+  cursor: pointer;
+  transition: 0.6s !important;
+}
+
+/* @media all and (max-width: px){
+
+} */
