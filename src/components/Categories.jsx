@@ -5,6 +5,7 @@ import {
   FormControl,
   FormControlLabel,
   FormLabel,
+  IconButton,
   InputAdornment,
   Paper,
   Radio,
@@ -15,7 +16,8 @@ import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useProducts } from "../contexts/ProductContextProvider";
-
+import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
+import { ButtonToolbar } from "react-bootstrap";
 const Categories = () => {
   const { getProducts, fetchByParams } = useProducts();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -38,35 +40,45 @@ const Categories = () => {
 
   //   console.log(window.location.search);
 
-  const [left, setLeft] = useState("-20%");
+  const [left, setLeft] = useState("-100%");
 
   const handleSidebar = () => {
-    if (left == "-20%") {
+    if (left == "-100%") {
       setLeft("0");
     } else {
-      setLeft("-20%");
+      setLeft("-100%");
     }
   };
 
   return (
     <Box>
-      <Button onClick={handleSidebar} sx={{ mt: 10 }}>
-        click
+      <Button
+        onClick={handleSidebar}
+        sx={{
+          mt: 11,
+          color: "black",
+          height: "50px",
+          width: "150px",
+          zIndex: 99,
+        }}
+      >
+        {/* <KeyboardArrowRightRoundedIcon
+          
+        /> */}
+        <span>Categories</span>
       </Button>
       <Paper
         sx={{
           zIndex: 999,
           position: "fixed",
-          transition: "200ms",
+          transition: "500ms",
           left: left,
-          mt: 13,
-          ml: 1,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "flex-start",
-          p: 5,
+          justifyContent: "center",
+          p: 2,
           maxHeight: 350,
-          maxWidth: 220,
+          maxWidth: 180,
         }}
       >
         <Box>
@@ -107,7 +119,7 @@ const Categories = () => {
           </FormControl>
         </Box>
         <TextField
-          sx={{ mt: 3, color: "dark" }}
+          sx={{ width: "100%", mt: 3, mr: 2, color: "dark" }}
           onChange={(e) => setSearch(e.target.value)}
           id="input-with-icon-textfield"
           label="Search"

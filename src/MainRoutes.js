@@ -13,6 +13,7 @@ import AdminPage from "./pages/AdminPage";
 import EditProductPage from "./pages/EditProductPage";
 import PayPage from "./pages/PayPage";
 import Amg from "./pages/Amg";
+import PurchasePage from "./pages/PurchasePage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -80,6 +81,11 @@ const MainRoutes = () => {
       link: "/amg",
       element: <Amg />,
       id: 13,
+    },
+    {
+      link: "/purchase",
+      element: <PurchasePage />,
+      id: 14,
     },
   ];
   return (

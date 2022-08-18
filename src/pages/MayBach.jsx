@@ -20,7 +20,7 @@ const MayBach = () => {
         <MDBCarouselInner>
           <MDBCarouselItem className="active">
             <MDBCarouselElement
-              style={{ height: 620 }}
+              style={{ height: 620, objectFit: "cover" }}
               // className="square bg-primary rounded-pill"
               // style="width: 150px"
               src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/design/exterior-gallery/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile/image.MQ4.0.2x.20211129144443.jpeg"
@@ -31,7 +31,7 @@ const MayBach = () => {
 
           <MDBCarouselItem>
             <MDBCarouselElement
-              style={{ height: 620 }}
+              style={{ height: 620, objectFit: "cover" }}
               src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/design/exterior-gallery/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_1731972194/image.MQ4.0.2x.20211126094554.jpeg"
               alt="car"
             />
@@ -40,7 +40,7 @@ const MayBach = () => {
 
           <MDBCarouselItem>
             <MDBCarouselElement
-              style={{ height: 620 }}
+              style={{ height: 620, objectFit: "cover" }}
               src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/design/exterior-gallery/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile_1156391696/image.MQ4.0.2x.20211126094401.jpeg"
               alt="car"
             />
@@ -69,13 +69,14 @@ const MayBach = () => {
       </div>
 
       <div data-aos="fade-right">
-        <Box className="box">
+        <Box style={{ objectFit: "contain" }} className="box">
           <img
-            className="image1"
+            style={{ objectFit: "contain" }}
+            className="image2"
             src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/explore/100-years/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide/image.MQ4.7.2x.20211202005712.jpeg"
             alt="mers2"
           />
-          <div>
+          <div style={{ height: "100%" }}>
             <h4 className="title2">Легендарный облик</h4>
             <p className="about4">
               В 2021 году Maybach отметил столетие со дня выпуска первого
@@ -85,10 +86,7 @@ const MayBach = () => {
               художник Игнаси Монреаль. Рассказывая о процессе работы над
               кампанией под слоганом «Эпоха легенды продолжается», Монреаль
               отмечает, что он стремился придать Mercedes-Maybach по-настоящему
-              легендарный облик. В материалах можно встретить изображение “муз”,
-              которые закладывают идею в голову Вильгельма Майбаха, и золотого
-              феникса, который является отражением мифической ауры автомобиля и
-              постоянного стремления к инновациям.
+              легендарный облик.
             </p>
           </div>
         </Box>
@@ -111,6 +109,7 @@ const MayBach = () => {
       <div data-aos="fade-left">
         <Box className="box">
           <img
+            style={{ objectFit: "contain" }}
             className="image2"
             src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/explore/comfort-teaser/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide/image.MQ4.7.2x.20210511105651.jpeg"
             alt="mers2"
@@ -148,6 +147,7 @@ const MayBach = () => {
       <div data-aos="fade-down-right">
         <Box className="box">
           <img
+            style={{ objectFit: "contain" }}
             className="image2"
             src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/explore/safety-teaser/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide/image.MQ4.7.2x.20211129150531.jpeg"
             alt="mers2"
@@ -185,6 +185,7 @@ const MayBach = () => {
       <div data-aos="fade-down-left">
         <Box className="box">
           <img
+            style={{ objectFit: "contain" }}
             className="image2"
             src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/s-class/mercedes-maybach-z223/explore/specifications-teaser/_jcr_content/par/imagenumbercombinati/media/videoimageslide/image.MQ4.8.2x.20211129150714.jpeg"
             alt="mers2"

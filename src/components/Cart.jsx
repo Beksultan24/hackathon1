@@ -65,7 +65,10 @@ export default function Cart() {
   };
 
   return (
-    <TableContainer sx={{ marginTop: 7.8 }}>
+    <TableContainer
+      className="table"
+      sx={{ marginTop: 7.8, overflowX: "hidden" }}
+    >
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -187,7 +190,7 @@ export default function Cart() {
         <Typography variant="h6" component="div">
           Total price: {cart?.totalPrice}
           <Button className="btn-buy" onClick={() => cartCleaner()}>
-            BUY NOW
+            BUY
           </Button>
         </Typography>
       </Box>

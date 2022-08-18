@@ -1,0 +1,11 @@
+.btn-buy-card {
+  color: white !important;
+  background-color: black !important;
+  transition: 0.4s;
+  border: 2px solid black !important;
+}
+.btn-buy-card:hover {
+  font-size: large !important;
+  color: rgb(0, 0, 0) !important;
+  background-color: rgb(255, 255, 255) !important;
+}

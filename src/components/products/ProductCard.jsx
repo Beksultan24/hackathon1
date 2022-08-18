@@ -115,7 +115,6 @@ export default function ProductCard({ item }) {
         // >
         //   Buy
         // </Button>
-
         null}
 
         <Button
@@ -133,7 +132,7 @@ export default function ProductCard({ item }) {
             }}
           >
             <ShoppingCartIcon
-              color={checkProductInCart(item.id) ? "success" : ""}
+              color={checkProductInCart(item.id) ? "primary" : ""}
               sx={{ mr: "5px" }}
             />
           </IconButton>

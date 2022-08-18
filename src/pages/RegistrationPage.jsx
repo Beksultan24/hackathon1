@@ -45,82 +45,89 @@ export default function RegistrationPage() {
   const [password, setPassword] = React.useState("");
 
   const [changeColorProfile, setChangeColorProfile] = React.useState("#adadad");
-  const [changeColorLock, setChangeColorLock] = React.useState("#adadad");
+  const [changeColorLock, setChangeColorLock] = React.useState("black");
 
   function handleRegister(email, password) {
     register(email, password);
   }
 
   return (
-    <div className="auth-main">
-      <div className="auth-block">
-        <h3 className="auth-header">Sign Up</h3>
-        <div className="auth__input-block">
-          <p>Username</p>
-          <div className="auth-input__form">
-            <label htmlFor="email">
-              <PersonOutlineIcon
-                id="usernameInp"
-                className="auth-input__icon"
-                sx={{ color: changeColorProfile, transition: "all 100ms" }}
+    <>
+      {/* <img
+        className="img-reg"
+        src="https://static.my.ge/myauto/catalog/mercedes/e_klasse_amg/22298932/22299091/img/0.jpg"
+        alt=""
+      /> */}
+      <div className="auth-main">
+        <div className="auth-block">
+          <h3 className="auth-header">Sign Up</h3>
+          <div className="auth__input-block">
+            <p>Username</p>
+            <div className="auth-input__form">
+              <label htmlFor="email">
+                <PersonOutlineIcon
+                  id="usernameInp"
+                  className="auth-input__icon"
+                  sx={{ color: changeColorProfile, transition: "all 100ms" }}
+                />
+              </label>
+              <input
+                placeholder="Type your mail"
+                className="auth-input"
+                type="text"
+                id="email"
+                name="email"
+                autoComplete="email"
+                autoFocus
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                onFocus={() => setChangeColorProfile("black")}
+                onBlur={() => setChangeColorProfile("#adadad")}
               />
-            </label>
-            <input
-              placeholder="Type username"
-              className="auth-input"
-              type="text"
-              id="email"
-              name="email"
-              autoComplete="email"
-              autoFocus
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              onFocus={() => setChangeColorProfile("#8C2CEF")}
-              onBlur={() => setChangeColorProfile("#adadad")}
-            />
+            </div>
           </div>
-        </div>
-        <div className="auth__input-block">
-          <p>Password</p>
-          <div className="auth-input__form">
-            <label htmlFor="password">
-              <LockOutlinedIcon
-                id="userpasswordInp"
-                className="auth-input__icon"
-                sx={{ color: changeColorLock, transition: "all 100ms" }}
+          <div className="auth__input-block">
+            <p>Password</p>
+            <div className="auth-input__form">
+              <label htmlFor="password">
+                <LockOutlinedIcon
+                  id="userpasswordInp"
+                  className="auth-input__icon"
+                  sx={{ color: changeColorLock, transition: "all 100ms" }}
+                />
+              </label>
+              <input
+                placeholder="Type password"
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                onFocus={() => setChangeColorLock("black")}
+                onBlur={() => setChangeColorLock("#adadad")}
               />
-            </label>
-            <input
-              placeholder="Type password"
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              onFocus={() => setChangeColorLock("#8C2CEF")}
-              onBlur={() => setChangeColorLock("#adadad")}
-            />
+            </div>
           </div>
-        </div>
-        {error ? (
-          <Typography sx={{ color: "red", m: 1 }}>{error}</Typography>
-        ) : null}
-        <button
-          className="auth-btn"
-          // onClick={() => handleLogin(email, password)}
-          onClick={() => handleRegister(email, password)}
-        >
-          Sign Up
-        </button>
-        <div className="auth-another">
-          <p className="auth-another__hint">Or Sign In</p>
-          <button onClick={() => navigate("/login")} className="auth-link">
-            SIGN IN
+          {error ? (
+            <Typography sx={{ color: "red", m: 1 }}>{error}</Typography>
+          ) : null}
+          <button
+            className="auth-btn"
+            // onClick={() => handleLogin(email, password)}
+            onClick={() => handleRegister(email, password)}
+          >
+            Sign Up
           </button>
+          <div className="auth-another">
+            <p className="auth-another__hint">Or Sign In</p>
+            <button onClick={() => navigate("/login")} className="auth-link">
+              SIGN IN
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

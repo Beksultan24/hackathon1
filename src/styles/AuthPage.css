@@ -5,6 +5,7 @@
   height: 100%;
   color: #333;
   font-family: "Poppins";
+  margin-top: 7% !important;
 }
 
 .auth-main * {
@@ -13,10 +14,11 @@
 
 .auth-block {
   padding: 65px 55px 55px;
-  margin: 65px auto 30px;
+  margin: 30px auto 105px;
   background-color: #fff;
   border-radius: 10px;
   width: 500px;
+  height: 500px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +32,7 @@
   font-size: 39px;
   line-height: 1.2;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .auth__input-block p {
@@ -93,17 +95,18 @@
   cursor: pointer;
   height: 50px;
   text-transform: uppercase;
-  background: #8c2cef;
+  background: black;
   border: 0;
   width: 100%;
   border-radius: 14px;
   font-weight: 500;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 }
 
 .auth-btn:hover {
-  background-color: #5e0eae;
-  color: #fff;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .auth-link {
@@ -129,10 +132,18 @@
 
 .auth-another p {
   font-size: 14px;
-  padding-bottom: 20px;
+  padding-bottom: 2px;
   color: #666666;
 }
 
 .auth-link:hover {
   color: #8c2cef;
+}
+
+.auth-link:hover {
+  color: rgb(254, 41, 41) !important;
+}
+
+.auth-block {
+  height: 100%;
 }

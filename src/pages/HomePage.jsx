@@ -9,7 +9,8 @@ const HomePage = () => {
     <div className="homePage">
       <div className="image">
         <img
-          style={{ width: "100%", height: 655 }}
+          className="image-homepage"
+          style={{ height: 655 }}
           src="https://www.mercedes-benz.co.uk/passengercars/mercedes-benz-cars/models/amg-gt/4-door-coupe-x290-fl/e-performance/performance/_jcr_content/par/hotspotsimple/image.MQ6.12.20220714142114.jpeg"
           alt=""
         />

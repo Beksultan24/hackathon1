@@ -19,7 +19,7 @@ const Amg = () => {
         <MDBCarouselInner>
           <MDBCarouselItem className="active">
             <MDBCarouselElement
-              style={{ height: 620 }}
+              style={{ height: 620, objectFit: "cover" }}
               // className="square bg-primary rounded-pill"
               // style="width: 150px"
               src="https://wallpaperaccess.com/full/2216284.jpg"
@@ -30,7 +30,7 @@ const Amg = () => {
 
           <MDBCarouselItem>
             <MDBCarouselElement
-              style={{ height: 620 }}
+              style={{ height: 620, objectFit: "cover" }}
               src="https://wallpaperaccess.com/full/1431594.jpg"
               alt="car"
             />
@@ -39,8 +39,8 @@ const Amg = () => {
 
           <MDBCarouselItem>
             <MDBCarouselElement
-              style={{ height: 620 }}
-              src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/glc/coupe-c253/mercedes-amg/interior-design/_jcr_content/par/productinfotabnav/tabnav/productinfotabnavite/tabnavitem/videoimageslider/slides/videoimageslide/image.MQ4.12.20220201065847.jpeg"
+              style={{ width: "100vw", height: 620, objectFit: "cover" }}
+              src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/e-class/saloon-w213-fl-copy/amg/offers/_jcr_content/backgroundimage.MQ4.12.2x.20211217071143.jpeg"
               alt="car"
             />
 
@@ -73,9 +73,7 @@ const Amg = () => {
             src="https://www.mercedes-benz.ru/passengercars/mercedes-benz-cars/models/e-class/saloon-w213-fl-copy/amg/highlights/_jcr_content/contentgallerycontainer/par/contentgallery/par/contentgallerytile/image.MQ4.8.20200709103715.jpeg"
             alt="mers2"
           />
-          <b className="abs" color="black">
-            Экстерьер
-          </b>
+
           <div>
             <img
               className="image1"

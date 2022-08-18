@@ -11,6 +11,7 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import { useNavigate } from "react-router-dom";
+import { Typography } from "@mui/material";
 
 export default function SideBar() {
   const [state, setState] = React.useState({
@@ -44,6 +45,7 @@ export default function SideBar() {
         className="icon-side"
         src="https://assets.webiconspng.com/uploads/2017/09/Mercedes-PNG-Image-50019.png"
       />
+
       <Button className="btn-cars1" onClick={() => navigate("/amg")}>
         AMG
       </Button>
@@ -52,7 +54,9 @@ export default function SideBar() {
         Maybach
       </Button>
       <br />
-      <Button className="btn-cars">Mercedes-EQ</Button>
+      <Button className="btn-cars">
+        Mercedes-EQ <br />
+      </Button>
     </Box>
   );
 
@@ -66,6 +70,7 @@ export default function SideBar() {
               src="https://assets.webiconspng.com/uploads/2017/09/Mercedes-PNG-Image-50019.png"
               onClick={toggleDrawer(anchor, true)}
             />
+
             {anchor}
           </div>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}

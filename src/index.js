@@ -11,7 +11,9 @@ import "./styles/HomePage.css";
 import "./styles/ProductCard.css";
 import "./styles/Cart.css";
 import "./styles/Amg.css";
-
+import "./styles/Categories.css";
+import "./styles/PayPage.css";
+import "./styles/EditProduct.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -55,11 +55,12 @@ const EditProduct = () => {
         Edit product
       </Typography>
       <TextField
-        sx={{ m: 1 }}
+        className="inp-edit"
+        sx={{ m: 1, color: "black !important" }}
         id="standard-basic"
         label="Name"
         variant="outlined"
-        color="secondary"
+        // color="dark"
         fullWidth
         name="name"
         onChange={handleInp}
@@ -67,11 +68,12 @@ const EditProduct = () => {
         focused
       />
       <TextField
+        className="inp-edit"
         sx={{ m: 1 }}
         id="standard-basic"
         label="Description"
         variant="outlined"
-        color="secondary"
+        // color="secondary"
         fullWidth
         name="description"
         onChange={handleInp}
@@ -79,11 +81,12 @@ const EditProduct = () => {
         focused
       />
       <TextField
+        className="inp-edit"
         sx={{ m: 1 }}
         id="standard-basic"
         label="Price"
         variant="outlined"
-        color="secondary"
+        // color="secondary"
         fullWidth
         name="price"
         onChange={handleInp}
@@ -91,11 +94,12 @@ const EditProduct = () => {
         focused
       />
       <TextField
+        className="inp-edit"
         sx={{ m: 1 }}
         id="standard-basic"
         label="Picture"
         variant="outlined"
-        color="secondary"
+        // color="secondary"
         fullWidth
         name="picture"
         onChange={handleInp}
@@ -103,11 +107,12 @@ const EditProduct = () => {
         focused
       />
       <TextField
+        className="inp-edit"
         sx={{ m: 1 }}
         id="standard-basic"
         label="Type"
         variant="outlined"
-        color="secondary"
+        // color="secondary"
         fullWidth
         name="type"
         onChange={handleInp}
@@ -117,9 +122,9 @@ const EditProduct = () => {
       <Button
         sx={{
           m: 1,
-          bgcolor: "#8C2CEF",
+          bgcolor: "rgb(25, 30, 25)",
           color: "#fff",
-          "&:hover": { bgcolor: "#8125DC" },
+          "&:hover": { bgcolor: "black" },
         }}
         variant="outlined"
         fullWidth
@@ -135,9 +140,9 @@ const EditProduct = () => {
       <Button
         sx={{
           m: 1,
-          bgcolor: "black",
+          bgcolor: "rgb(25, 30, 25)",
           color: "#fff",
-          "&:hover": { bgcolor: "#8125DC" },
+          "&:hover": { bgcolor: "black" },
         }}
         variant="outlined"
         fullWidth

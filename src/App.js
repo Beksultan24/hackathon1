@@ -1,3 +1,4 @@
+import { Box } from "@mui/system";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AuthContextProvider from "./contexts/AuthContextProvider";
@@ -12,8 +13,10 @@ function App() {
         <ProductContextProvider>
           <CartContextProvider>
             <Navbar />
-            <MainRoutes />
-            <Footer />
+            <Box sx={{ overflowX: "hidden" }}>
+              <MainRoutes />
+              <Footer />
+            </Box>
           </CartContextProvider>
         </ProductContextProvider>
       </AuthContextProvider>
